@@ -1,0 +1,44 @@
+
+#include<stdio.h>
+
+int main() {
+
+    int bookID;
+    int duedate;
+    int returndate;
+    int overduedays;
+    int finerate;
+    int fineamount;
+
+    printf("enter the book ID:");
+    scanf("%d",&bookID);
+
+    printf("enter due date:");
+    scanf("%d",&duedate);
+
+    printf("enter return date:");
+    scanf("%d",&returndate);
+
+    overduedays=returndate-duedate;
+    printf("enter the overduedays: %d \n",overduedays);
+
+    finerate=overduedays;
+    printf("enter the finerate: %.2f \n",finerate);
+
+    if (finerate<=7){
+       fineamount=finerate * 20;
+    } else if (finerate>=8 && finerate<=14) {
+       fineamount=finerate * 50;
+    } else if (finerate>=15) {
+       fineamount=finerate * 100;
+    } else {
+       fineamount=0;
+    }
+
+printf("enter the fineamount is: %.2f\n",fineamount);
+
+
+    return 0;
+
+}
+
