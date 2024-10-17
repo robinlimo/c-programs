@@ -1,0 +1,10 @@
+// Arrays in C - 2D arrays
+#include<stdio.h>
+int main(){
+    int i,j;
+    int marks[2][3] = {{40,80,50},{30,60,30}};
+    for(i=0;i<2;i++){
+        printf("marks[%d][%d] = %d \n",i,j,marks[i][j]);
+    }
+    return 0;
+    }
